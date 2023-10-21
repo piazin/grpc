@@ -1,0 +1,10 @@
+services:
+  db:
+    image: bitnami/mongodb:5.0.17
+    ports:
+      - 27013:27013
+    environment:
+      MONGODB_ROOT: root
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_KEY: 123456
+      MONGODB_DATABASE: b3
